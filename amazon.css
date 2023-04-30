@@ -201,3 +201,40 @@ nav img{
 				position: relative;
 	     		top: 1800px;		
 			}
+
+.darkmode{
+	position: relative;
+	bottom: 45px;
+	left: 15%;
+	
+	
+}
+.darkmode button{
+	height: 50px;
+	width: 60px;
+}
+
+
+/* For light Mode Dark Mode */
+.mydark{
+	background-color: black;
+	color: white;
+}
+.dark{
+	background-color: black;
+}
+
+/* For Coupoun */
+
+#coupon{
+	height:400px;
+	width:600px;
+	color: #222d3f;
+	background-image: url(coupoun.jpg);
+	background-size: cover;
+	z-index:100;
+	position: absolute;
+	 margin-top: -35%;
+	margin-left: 30%;
+	visibility: hidden;
+} 

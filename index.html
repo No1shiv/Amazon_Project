@@ -6,18 +6,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="amazon.css">
+    <script src="amazon.js"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-		<header>
+		<header class="main">
 			<div class="amazon_logo">
 				<a href="#"><img src="iconsandlogo/amazonlogo.png" alt="Amazon_logo"></a>
-			</div>			
+			</div>	
+            <div class="darkmode" >
+                <button onclick="changeMode(), mode(), drow(), foot()">
+                    <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i> 
+                </button>
+            </div>		
 		</header>
 
-		<nav class="nav_links">
+		<nav class="nav_links main">
 				<a href="#Sell">Sell</a>
 				<a href="#Amazon miniTV">Amazon miniTV</a>
 				<a href="#Best Sellers">Best Sellers</a>
@@ -31,7 +38,7 @@
 		</nav>
 
 
-		<div class="main_body">
+		<div class="main_body main">
 			<div class="slider">
 				<div id="devCarousel" class="carousel slide" data-ride="carousel" class="slider">          
                 <div class="carousel-inner">
@@ -387,7 +394,7 @@
 </div>
 
 
-		 <footer>
+		 <footer class="main">
             	<div class="backtotop">
             		<a href="#top"><h4>Back to top</h4></a>
             	</div>
@@ -533,5 +540,14 @@
             	</div>	
             </footer> 
 		
+
+            <div id="coupon">
+                <button onClick ="closeCoupon()">&times;</button>
+            </div>
+    
+            <script>
+                window.onload = loadCoupon()
+            </script>
+
 </body>
 </html>
