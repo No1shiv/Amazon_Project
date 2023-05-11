@@ -202,12 +202,21 @@ nav img{
 	     		top: 1800px;		
 			}
 
+.location{
+	color: white;
+	position: relative;
+	left: 13%;
+	bottom: 45px;
+	/* border: 1px solid red; */
+	width: 15%;
+	font-size: 15px;
+}
+
+
 .darkmode{
 	position: relative;
-	bottom: 45px;
-	left: 15%;
-	
-	
+	bottom: 105px;
+	left: 25%;	
 }
 .darkmode button{
 	height: 50px;

@@ -17,6 +17,10 @@
 			<div class="amazon_logo">
 				<a href="#"><img src="iconsandlogo/amazonlogo.png" alt="Amazon_logo"></a>
 			</div>	
+            <div class="location">
+                <p id="out">Hello</p>
+                <p id="weather">Select Location</p>
+            </div>
             <div class="darkmode" >
                 <button onclick="changeMode(), mode(), drow(), foot()">
                     <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i> 
@@ -547,6 +551,7 @@
     
             <script>
                 window.onload = loadCoupon()
+                window.onload = geolocation()
             </script>
 
 </body>
