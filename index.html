@@ -1,558 +1,786 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Amazon</title>
-	<link rel="icon" href="iconsandlogo/amazon_icon.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Amazon_Clone_Website</title>
+        <link rel="icon" href="https://i.ibb.co/4j1YH0H/amazon-icon.png" />
+
+        <!-- CSS links -->
+        <link rel="stylesheet" type="text/css" href="CSS_files/amazon_header.css"/>
+
+        <!-- Bootstrap links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Font awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="amazon.css">
-    <script src="amazon.js"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-		<header class="main">
-			<div class="amazon_logo">
-				<a href="#"><img src="iconsandlogo/amazonlogo.png" alt="Amazon_logo"></a>
-			</div>	
-            <div class="location">
-                <p id="out">Hello</p>
-                <p id="weather">Select Location</p>
-            </div>
-            <div class="darkmode" >
-                <button onclick="changeMode(), mode(), drow(), foot()">
-                    <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i> 
-                </button>
-            </div>		
-		</header>
-
-		<nav class="nav_links main">
-				<a href="#Sell">Sell</a>
-				<a href="#Amazon miniTV">Amazon miniTV</a>
-				<a href="#Best Sellers">Best Sellers</a>
-				<a href="#Mobiles">Mobiles</a>
-				<a href="#Today's Deals">Today's Deals</a>
-				<a href="#Customer Service">Customer Service</a>
-				<a href="#Electronics">Electronics</a>
-				<a href="#Prime">Prime</a>
-				<a href="#Amazon Pay">Amazon Pay</a>
-				<img src="images/nav_img.jpg">
-		</nav>
 
 
-		<div class="main_body main">
-			<div class="slider">
-				<div id="devCarousel" class="carousel slide" data-ride="carousel" class="slider">          
-                <div class="carousel-inner">
-                    <div class="item active">
-                       <img src="images/slider_images/a4.jpg" alt="one"/>
-                    </div>
-                    <div class="item">
-                    <img src="images/slider_images/a2.jpg" alt="two"/>
-                    </div>
-                    <div class="item">
-                        <img src="images/slider_images/a3.jpg" alt="three"/>
-                    </div>               
-                    <div class="item">
-                        <img src="images/slider_images/a5.jpg" alt="four"/>
-                    </div>
-                    <div class="item">
-                        <img src="images/slider_images/a6.jpg" alt="five"/>
-                    </div>
-                    <div class="item">
-                        <img src="images/slider_images/a7.jpg" alt="six"/>
-                    </div>
-                    <div class="item">
-                        <img src="images/slider_images/a1.jpg" alt="seven"/>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#devCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#devCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
-			</div>
-			
-
-		<!-- Container 1 containing four div -->
-  <div class="container1">
-    <!-- Tile 1 of container 1-->
-	<div class="tile1">
-      <h3>Book travel tickets and get offers</h3>
-    	<div class="row1">
-          <div class="d1">
-          		<img src="images/tiles/plane.jpg" alt="Plane">
-          		<h5>Get upto ₹2000 off</h5>
-           </div>
-           <div class="d1">
-          		<img src="images/tiles/train.jpg" alt="Train">
-          		<h5>Zero gateway charges</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/bus.jpg" alt="Plane">
-              <h5>Get flat 10% off</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/suitcase.jpg" alt="Plane">
-              <h5>Travel essentials</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-  </div>  	
-    <!-- Tile 2 of container 1-->
-  <div class="tile2">
-      <h3>Automotive essentials | get 60% off</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/glasscare.jpg" alt="clean">
-              <h5>Cleaning Accessories</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/rimtyre.jpg" alt="Tyre&rim">
-              <h5>Tyre and rim care</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/helmet.jpg" alt="helmets">
-              <h5>Helmets</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/vaccum.jpg" alt="vaccum">
-              <h5>Vaccum cleaner</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 3  of container 1-->
-    <div class="tile3">
-      <h3>Revamp your home in style</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/bedsheet.jpg" alt="bedsheet">
-              <h5>Bedsheets and curtains</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/homedecor.jpg" alt="home_decor">
-              <h5>Home decoration</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/storage.jpg" alt="Storage">
-              <h5>Home Storage</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/lights.jpg" alt="lights">
-              <h5>Lighting Solutions</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 4 of container 1 -->
-    <div class="tile4">
-      <h3>Electronics devices for home office</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/watch.jpg" alt="watch">
-              <h5>Smart watches</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/tablets.jpg" alt="Tyre&rim">
-              <h5>Tablets</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/laptops.jpg" alt="Laptop">
-              <h5>Laptops</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/monitors.jpg" alt="Monitor">
-              <h5>Monitors</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-  </div>
-  <!-- End of container 1 -->
 
 
-  <!-- Container 2 containing four div -->
-  <div class="container2">
-  <!-- Tile 1 of container 2 -->
-  <div class="tile1">
-      <h3>Book travel tickets and get offers</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/plane.jpg" alt="Plane">
-              <h5>Get upto ₹2000 off</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/train.jpg" alt="Train">
-              <h5>Zero gateway charges</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/bus.jpg" alt="Plane">
-              <h5>Get flat 10% off</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/suitcase.jpg" alt="Plane">
-              <h5>Travel essentials</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-  </div>    
-   <!--Tile 2 of container 2 -->
-  <div class="tile2">
-      <h3>Automotive essentials | get 60% off</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/glasscare.jpg" alt="clean">
-              <h5>Cleaning Accessories</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/rimtyre.jpg" alt="Tyre&rim">
-              <h5>Tyre and rim care</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/helmet.jpg" alt="helmets">
-              <h5>Helmets</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/vaccum.jpg" alt="vaccum">
-              <h5>Vaccum cleaner</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 3 of container 2-->
-    <div class="tile3">
-      <h3>Revamp your home in style</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/bedsheet.jpg" alt="bedsheet">
-              <h5>Bedsheets and curtains</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/homedecor.jpg" alt="home_decor">
-              <h5>Home decoration</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/storage.jpg" alt="Storage">
-              <h5>Home Storage</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/lights.jpg" alt="lights">
-              <h5>Lighting Solutions</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 4 of container 2-->
-    <div class="tile4">
-      <h3>Electronics devices for home office</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/watch.jpg" alt="watch">
-              <h5>Smart watches</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/tablets.jpg" alt="Tyre&rim">
-              <h5>Tablets</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/laptops.jpg" alt="Laptop">
-              <h5>Laptops</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/monitors.jpg" alt="Monitor">
-              <h5>Monitors</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-  </div>
-  <!-- End of Container 2 -->
+        <script>
 
-
-  <!-- Container 3 containing four div -->
-  <div class="container3">
-  <!-- Tile 1 of container 3 -->
-  <div class="tile1">
-      <h3>Book travel tickets and get offers</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/plane.jpg" alt="Plane">
-              <h5>Get upto ₹2000 off</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/train.jpg" alt="Train">
-              <h5>Zero gateway charges</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/bus.jpg" alt="Plane">
-              <h5>Get flat 10% off</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/suitcase.jpg" alt="Plane">
-              <h5>Travel essentials</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-  </div>    
-  <!--Tile 2 of container 3  -->
-  <div class="tile2">
-      <h3>Automotive essentials | get 60% off</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/glasscare.jpg" alt="clean">
-              <h5>Cleaning Accessories</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/rimtyre.jpg" alt="Tyre&rim">
-              <h5>Tyre and rim care</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/helmet.jpg" alt="helmets">
-              <h5>Helmets</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/vaccum.jpg" alt="vaccum">
-              <h5>Vaccum cleaner</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 3 of container 3 -->
-    <div class="tile3">
-      <h3>Revamp your home in style</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/bedsheet.jpg" alt="bedsheet">
-              <h5>Bedsheets and curtains</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/homedecor.jpg" alt="home_decor">
-              <h5>Home decoration</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/storage.jpg" alt="Storage">
-              <h5>Home Storage</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/lights.jpg" alt="lights">
-              <h5>Lighting Solutions</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-    <!-- Tile 4 of container 3  -->
-    <div class="tile4">
-      <h3>Electronics devices for home office</h3>
-      <div class="row1">
-          <div class="d1">
-              <img src="images/tiles/watch.jpg" alt="watch">
-              <h5>Smart watches</h5>
-           </div>
-           <div class="d1">
-              <img src="images/tiles/tablets.jpg" alt="Tyre&rim">
-              <h5>Tablets</h5>
-           </div>
-         </div>
-      <div class="row2">
-          <div class="d1">
-              <img src="images/tiles/laptops.jpg" alt="Laptop">
-              <h5>Laptops</h5>
-           </div>
-          <div class="d1">
-              <img src="images/tiles/monitors.jpg" alt="Monitor">
-              <h5>Monitors</h5>
-          </div>
-       </div>  
-       <a href="#" class="explore">Explore More</a> 
-    </div>  
-  </div>
-  <!-- End of Container 3 -->	
-
-</div>
-
-
-		 <footer class="main">
-            	<div class="backtotop">
-            		<a href="#top"><h4>Back to top</h4></a>
-            	</div>
-
-            	<div class="footer2">
-		            <div class="footDiv">
-		            <ul>
-		            	<li class="listone">Get to Know Us</li>
-		                <li>About Us</li>
-		                <li>Careers</li>
-		                <li>Press Releases</li>
-		                <li>Amazon Science</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		            	<li class="listone">Connect With Us</li>
-		                <li>Facebook</li>
-		                <li>Twitter</li>
-		                <li>Instagram</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>
-		            </ul>
-		            </div>
-		            <div class="footDiv noBorder">
-		            <ul>
-		                <li class="listone">Make Money With Us</li>
-		                <li>Sell on Amazon</li>
-		                <li>Sell Under Amazon Accelerator</li>
-		                <li>Protect and Bulid Your Brand</li>
-		                <li>Amazon Global Selling</li>
-		                <li>Become an Affiliate</li>
-		                <li>Fulfilment by Amazon</li>
-		                <li>Advertise Your Products</li>
-		                <li>Amazon Pay on Merchants</li>
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">Let Us Help You</li>
-		                <li>COVID-19 and Amazon</li>
-		                <li>Your Account</li>
-		                <li>Returns Centre</li>
-		                <li>100% Purchase Protection</li>
-		                <li>Amazon App Download</li>
-		                <li>Help</li>	
-		                <li>&nbsp</li>
-		                <li>&nbsp</li>	                
-		            </ul>
-		            </div>
-            	</div>
-
-
-            	<div class="footer3 ">
-            		<div >
-            			<img src="iconsandlogo/ama1.jpg">
-            		</div>
-            		<select class="footeroption ">
-            			<option>English</option>
-            		</select>
-            		<a href="#">Australia</a>
-            		<a href="#">Brazil</a>
-            		<a href="#">Cannada</a>
-            		<a href="#">China</a>
-            		<a href="#">France</a>
-            		<a href="#">Germany</a>
-            		<a href="#">Italy</a>
-            		<a href="#">Japan</a>
-            		<a href="#">Mexico</a>
-            		<a href="#">Netherlands</a>
-            		<a href="#">Poland</a>
-            		<a href="#">Singapore</a>
-            		<a href="#">Spain</a>
-            		<a href="#">Turkey</a>
-            		<a href="#">UK</a>
-            		<a href="#">USA</a>         		            	
-            	</div>
-
-            	<div class="footer4">
-		            <div class="footDiv">
-		            <ul>
-		            	<li class="listone">AbeBooks</li>
-		                <li>Books, art</li>
-		                <li>& collectibles</li>		                	               
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		            	<li class="listone">Amazon Web Services</li>
-		                <li>Scalable Cloud</li>
-		                <li>Computing Services</li>		                	                
-		            </ul>
-		            </div>
-		            <div class="footDiv noBorder">
-		            <ul>
-		                <li class="listone">Audible</li>
-		                <li>Download</li>
-		                <li>Audio Books</li>		                
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">DPReview</li>
-		                <li>Digital</li>
-		                <li>Photography</li>		                                
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">Shopbop</li>
-		                <li>Designer</li>
-		                <li>Fashion Brands</li>		                                
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">Amazon Business</li>
-		                <li>Everything For</li>
-		                <li>Your Business</li>		                                
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">Prime Now</li>
-		                <li>2-Hour Delivery</li>
-		                <li>on Everyday Items</li>		                                
-		            </ul>
-		            </div>
-		            <div class="footDiv">
-		            <ul>
-		                <li class="listone">Amazon Prime Music</li>
-		                <li>90 million songs, ad-free</li>
-		                <li>Over 15 million podcast episodes</li>                             
-		            </ul>
-		            </div>
-            	</div>	
-            </footer> 
-		
-
-            <div id="coupon">
-                <button onClick ="closeCoupon()">&times;</button>
-            </div>
+            // forCoupon
+        function loadCoupon(){
+            document.getElementById('coupon').style.visibility = 'visible';
+            document.getElementById('main').style.opacity = '0.3'
+            }
+        function closeCoupon(){
+            document.getElementById('coupon').style.visibility = 'hidden';
+            document.getElementById('main').style.opacity = '1'
+            }
     
-            <script>
-                window.onload = loadCoupon()
-                window.onload = geolocation()
-            </script>
+    
+            // for Geolocation
+        
+    
+        function geolocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                x.innerText="Geo Not Supported"
+                }
+        }
+        
+        function showPosition(data){
+    
+            let x = document.getElementById('location');
+            let y = document.getElementById('weather');
+    
+            console.log(data)
+            let lat = data.coords.latitude
+            let lon = data.coords.longitude
+            //  x.innerText = `Latitude is ${lat} and longitude is ${lon}`       
+            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+            //api calling
+            fetch(url,{method: 'GET'})
+            //return promise
+            .then((res) => res.json())
+            //resolve the promise
+            .then((data) => {
+            console.log(data)
+            let cityName = data.city.name;
+            let temp = data.list[0].temp.day + ' \u00B0C';
 
-</body>
+                x.innerText = cityName
+                y.innerText = temp
+            })
+        }  
+    
+    
+            // For Dark_Light Mode
+        function changeMode(){
+                var mybody = document.body
+                mybody.classList.toggle('mydark')  
+    
+        }
+    
+        function mode(){
+                for(i=0;i<12;i++){
+                    var c1t1 = document.getElementsByClassName('tile1')[i]
+                    c1t1.classList.toggle("mydark")           
+                }
+        }
+    
+        function drow(){
+                for(i=0;i<48;i++){
+                    var d = document.getElementsByClassName('d1')[i]
+                    d.classList.toggle("mydark")
+                }
+        } 
+
+    
+        </script>
+        <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            background-color: #e9e9e9;
+        }
+
+        </style>
+    </head>
+
+
+    
+
+
+    <body id="body">
+        <div id="main">
+        <header class="head">
+            
+            <div class="header_image">
+              <a href="#Amazon_homepage"><img src="https://i.ibb.co/NZjGXv9/amazon-logo.jpg" alt="Amazon_logo" /></a>  
+            </div>
+                                       
+            <div class="header_location">                
+                <div class="lo_icon">
+                    <i class="fa fa-map-marker  fa-2x" aria-hidden="true"></i>
+                 </div> 
+                <div class="locate">
+                    <div>
+                        <p id="location">Hello</p>
+                    </div>
+                    <div>
+                        <p id="weather">Select Location</p>
+                    </div>
+                </div>    
+            </div>
+
+
+            <div class="search_bar">
+                <form class="search" action=" ">                   
+                    <select class="select">
+                        <option>All</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon......" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>               
+                </form>
+            </div>
+            
+
+            <div class="light">
+                <button onclick="changeMode(), mode(), drow()" class="light_dark_mode"><i class="fa fa-lightbulb-o fa-3x" ></i></button>
+            </div>
+
+            <div class="signin logsign">
+                <a href="#">
+                    <i class="fa fa-sign-in fa-2x" ></i>
+                    <p class="p1">Sign-in</p>
+                </a>
+            </div>
+
+            <div class="login logsign">
+                <a href="#">
+                    <i class="fa fa-user fa-2x" ></i>
+                    <p>Login</p>
+                </a>
+            </div>
+
+            <div class="return">
+               <a href="#" >
+                <div>
+                    <p>Returns</p>
+                </div>
+                <div class="boldorder">
+                    <p>&Orders</p>
+                </div>
+               </a>               
+            </div>    
+          
+            <div class="cart">
+                <a href="#">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                </a>
+            </div>
+
+        </header>
+
+
+
+        <nav>
+            <div class="mynav" id="navigate">
+                <a href="javascript:void(0);" class="icon" onclick="my_navigation()">
+                 <i class="fa fa-bars active"></i>
+               </a>
+               <a href="#miniTV" >Amazon miniTV</a>
+               <a href="#Sell">Sell</a>
+               <a href="#BestSeller">Best Sellers</a>
+               <a href="#Deal">Today's Deal</a>
+               <a href="#Mobiles">Mobiles</a>
+               <a href="#New Releases">New Releases</a>
+               <a href="#Customer Service">Customer Service</a>
+               <a href="#Electronic">Electronics</a>
+               
+            </div>
+       </nav>
+       <script>
+        function myFunction() {
+          var x = document.getElementById("navigate");
+          if (x.className === "mynav") {
+            x.className += " responsive";
+          } else {
+            x.className = "mynav";
+          }
+        }
+        </script>
+
+
+    <div class="slider">
+        <div id="devCarousel" class="carousel slide move_carousel" data-ride="carousel" >          
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://i.ibb.co/GTJz49s/a11.jpg" alt="four"/>
+                </div>
+                <div class="item">
+                    <img src="https://i.ibb.co/3Fp1j7b/a12.jpg" alt="two"/>
+                </div>
+                <div class="item">
+                    <img src="https://i.ibb.co/QCcmr3q/a13.jpg" alt="three"/>
+                </div>                         
+            </div>
+
+            <a class="left carousel-control" href="#devCarousel" data-slide="prev" id="indicator_left">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#devCarousel" data-slide="next" id="indicator_right">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>  
+                   
+        </div>
+    </div>
+        
+
+    
+
+    <div class="main_body">
+
+        <div class="main1">
+            
+            <div class="container1">
+                
+                <div class="tile1">
+                    <h3>Appliances for your home and get 5% off</h3>
+                    <div class="row1">
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/TgHfNxV/air-conditioners.jpg" alt="Air Conditioners"></a>
+                            <h5>Air Conditioners</h5>
+                         </div>
+                         <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/SRc2QR1/microwaves.jpg" alt="Microwaves"></a>
+                            <h5>Microwaves</h5>
+                         </div>
+                       </div>
+                    <div class="row2">
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/wpzLLtj/refrigerators.jpg" alt="Refrigerators"></a>
+                            <h5>Refrigerators</h5>
+                         </div>
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/WBcDsBz/washing-machines.jpg" alt="Washing Machines"></a>
+                            <h5>Washing Machines</h5>
+                        </div>
+                     </div>  
+                     <a href="#" class="explore">Explore More</a> 
+                </div>    
+                </div>
+                
+
+
+                <div class="container1">
+                
+                    <div class="tile1">
+                        <h3>Electronics devices for home and office</h3>
+                        <div class="row1">
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/48BwMc9/laptops.jpg" alt="Laptops"></a>
+                                <h5>Laptops</h5>
+                             </div>
+                             <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/MSP2Dc3/monitors.jpg" alt="Monitors"></a>
+                                <h5>Monitors</h5>
+                             </div>
+                           </div>
+                        <div class="row2">
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/TvNS6jf/tablets.jpg" alt="Tablets"></a>
+                                <h5>Tablets</h5>
+                             </div>
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/G2qznnp/watch.jpg" alt="Smart Watch"></a>
+                                <h5>Smart Watch</h5>
+                            </div>
+                         </div>  
+                         <a href="#" class="explore">Explore More</a> 
+                    </div>    
+                    </div>
+
+
+
+                    <div class="container1">
+                
+                        <div class="tile1">
+                            <h3>Men's brand new fashion for every occasion</h3>
+                            <div class="row1">
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/sqtdbDx/tshirt.jpg" alt="T-shirt"></a>
+                                    <h5>T-shirt</h5>
+                                 </div>
+                                 <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/Bcp3rQh/shirt.png" alt="Shirt"></a>
+                                    <h5>Shirt</h5>
+                                 </div>
+                               </div>
+                            <div class="row2">
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/Z8WPjcG/jeans.png" alt="Jeans"></a>
+                                    <h5>Jeans</h5>
+                                 </div>
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/fktQnwm/trouser.png" alt="Trousers"></a>
+                                    <h5>Trousers</h5>
+                                </div>
+                             </div>  
+                             <a href="#" class="explore">Explore More</a> 
+                        </div>    
+                        </div>
+
+
+
+
+                        <div class="container1">
+                            
+                            <div class="tile1">
+                                <h3>Revamp your home and get 10% off</h3>
+                                <div class="row1">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/HgFQ7zD/homedecor.jpg" alt="Home Decor"></a>
+                                        <h5>Home Decor</h5>
+                                     </div>
+                                     <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/VgF5tXy/storage.jpg" alt="Storage"></a>
+                                        <h5>Storage</h5>
+                                     </div>
+                                   </div>
+                                <div class="row2">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/9yyt8qk/lights.jpg" alt="Lights"></a>
+                                        <h5>Lights</h5>
+                                     </div>
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/SXmJwts/bedsheet.jpg" alt="Bedsheets"></a>
+                                        <h5>Bedsheets</h5>
+                                    </div>
+                                 </div>  
+                                 <a href="#" class="explore">Explore More</a> 
+                            </div>  
+                            </div>
+        </div>
+
+
+
+        <div class="main1">
+            
+            <div class="container1">
+                
+                <div class="tile1">
+                    <h3>Book for finance, mythology and self development</h3>
+                    <div class="row1">
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/K6qysrN/book1.jpg" alt="book1"></a>
+                            <h5>The Hidden Hindu</h5>
+                         </div>
+                         <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/CtrKY2P/book2.jpg" alt="book2"></a>
+                            <h5>Psychology Of Money</h5>
+                         </div>
+                       </div>
+                    <div class="row2">
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/F3gp7N4/book3.jpg" alt="book3"></a>
+                            <h5>Energize Your Mind</h5>
+                         </div>
+                        <div class="d1">
+                            <a href="#"><img src="https://i.ibb.co/Js0fTtP/book4.jpg" alt="book4"></a>
+                            <h5>Atomic Habits</h5>
+                        </div>
+                     </div>  
+                     <a href="#" class="explore">Explore More</a> 
+                </div>    
+                </div>
+                
+
+
+                <div class="container1">
+                            
+                    <div class="tile1">
+                        <h3>Revamp your home in style and get 10% off</h3>
+                        <div class="row1">
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/HgFQ7zD/homedecor.jpg" alt="Home Decor"></a>
+                                <h5>Home Decor</h5>
+                             </div>
+                             <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/VgF5tXy/storage.jpg" alt="Storage"></a>
+                                <h5>Storage</h5>
+                             </div>
+                           </div>
+                        <div class="row2">
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/9yyt8qk/lights.jpg" alt="Lights"></a>
+                                <h5>Lights</h5>
+                             </div>
+                            <div class="d1">
+                                <a href="#"><img src="https://i.ibb.co/SXmJwts/bedsheet.jpg" alt="Bedsheets"></a>
+                                <h5>Bedsheets</h5>
+                            </div>
+                         </div>  
+                         <a href="#" class="explore">Explore More</a> 
+                    </div>  
+                    </div>
+
+
+
+
+                    <div class="container1">
+                
+                        <div class="tile1">
+                            <h3>Appliances for your home and get 5% off</h3>
+                            <div class="row1">
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/TgHfNxV/air-conditioners.jpg" alt="Air Conditioners"></a>
+                                    <h5>Air Conditioners</h5>
+                                 </div>
+                                 <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/SRc2QR1/microwaves.jpg" alt="Microwaves"></a>
+                                    <h5>Microwaves</h5>
+                                 </div>
+                               </div>
+                            <div class="row2">
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/wpzLLtj/refrigerators.jpg" alt="Refrigerators"></a>
+                                    <h5>Refrigerators</h5>
+                                 </div>
+                                <div class="d1">
+                                    <a href="#"><img src="https://i.ibb.co/WBcDsBz/washing-machines.jpg" alt="Washing Machines"></a>
+                                    <h5>Washing Machines</h5>
+                                </div>
+                             </div>  
+                             <a href="#" class="explore">Explore More</a> 
+                        </div>    
+                        </div>
+                        
+        
+        
+                        <div class="container1">
+                        
+                            <div class="tile1">
+                                <h3>Electronics devices for home and office</h3>
+                                <div class="row1">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/48BwMc9/laptops.jpg" alt="Laptops"></a>
+                                        <h5>Laptops</h5>
+                                     </div>
+                                     <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/MSP2Dc3/monitors.jpg" alt="Monitors"></a>
+                                        <h5>Monitors</h5>
+                                     </div>
+                                   </div>
+                                <div class="row2">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/TvNS6jf/tablets.jpg" alt="Tablets"></a>
+                                        <h5>Tablets</h5>
+                                     </div>
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/G2qznnp/watch.jpg" alt="Smart Watch"></a>
+                                        <h5>Smart Watch</h5>
+                                    </div>
+                                 </div>  
+                                 <a href="#" class="explore">Explore More</a> 
+                            </div>    
+                            </div>
+        
+        
+        </div>
+    
+
+        <div class="main1">
+            
+            <div class="container1">
+                
+                <div class="tile1">
+                    <h3>Shop & Pay  Earn rewards daily</h3>
+                    <div class="row1">
+                        <div class="d1">
+                            <img src="https://i.ibb.co/jzzPN8D/Claim-your-scratch-Cards.jpg" alt="Scratch Card">
+                            <h5>Claim your scratch card</h5>
+                         </div>
+                         <div class="d1">
+                            <img src="https://i.ibb.co/hC1dj8F/Pay-Win-scratch-cards.jpg" alt="Playandwin">
+                            <h5>Play & Win scratch cards</h5>
+                         </div>
+                       </div>
+                    <div class="row2">
+                        <div class="d1">
+                            <img src="https://i.ibb.co/M8GCqCx/Redeem-your-collected-rewards.jpg" alt="Redeem">
+                            <h5>Redeem your rewards</h5>
+                         </div>
+                        <div class="d1">
+                            <img src="https://i.ibb.co/wJywc63/Shop-Collect-Rewards.jpg" alt="shop">
+                            <h5>Shop and Collect</h5>
+                        </div>
+                     </div>  
+                     <a href="#" class="explore">Explore More</a> 
+                </div>    
+                </div>
+                
+
+
+                <div class="container1">
+                
+                    <div class="tile1">
+                        <h3>Automotive essentials  get 60% off</h3>
+                        <div class="row1">
+                            <div class="d1">
+                                <img src="https://i.ibb.co/MhQvBn0/helmet.jpg" alt="Helmet">
+                                <h5>Helmet</h5>
+                             </div>
+                             <div class="d1">
+                                <img src="https://i.ibb.co/1RNbLtY/glasscare.jpg" alt="Glasscare">
+                                <h5>Glasscare</h5>
+                             </div>
+                           </div>
+                        <div class="row2">
+                            <div class="d1">
+                                <img src="https://i.ibb.co/rF6Xxxp/vaccum.jpg" alt="Vacuum">
+                                <h5>Vacuum</h5>
+                             </div>
+                            <div class="d1">
+                                <img src="https://i.ibb.co/6XpNcsb/rimtyre.jpg" alt="Rimtyre">
+                                <h5>Tyres & Rims</h5>
+                            </div>
+                         </div>  
+                         <a href="#" class="explore">Explore More</a> 
+                    </div>    
+                    </div>
+
+
+
+                    <div class="container1">
+                
+                        <div class="tile1">
+                            <h3>Book travel tickets and get extra 10% off</h3>
+                            <div class="row1">
+                                <div class="d1">
+                                    <img src="https://i.ibb.co/ncGpkSb/plane.jpg" alt="Plane">
+                                    <h5>Get upto ₹2000 off</h5>
+                                 </div>
+                                 <div class="d1">
+                                    <img src="https://i.ibb.co/tJ1T8p6/train.jpg" alt="Train">
+                                    <h5>Zero gateway charges</h5>
+                                 </div>
+                               </div>
+                            <div class="row2">
+                                <div class="d1">
+                                    <img src="https://i.ibb.co/hyd7V7f/bus.jpg" alt="Plane">
+                                    <h5>Get flat 10% off</h5>
+                                 </div>
+                                <div class="d1">
+                                    <img src="https://i.ibb.co/yYfGRJG/suitcase.jpg" alt="Plane">
+                                    <h5>Travel essentials</h5>
+                                </div>
+                             </div>  
+                             <a href="#" class="explore">Explore More</a> 
+                        </div>    
+                        </div>
+
+
+
+
+                        <div class="container1">
+                
+                            <div class="tile1">
+                                <h3>Continue shopping for what you were looking</h3>
+                                <div class="row1">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/8z61df9/t-shirt.jpg" alt="T-shirt"></a>
+                                        <h5>T-shirt</h5>
+                                     </div>
+                                     <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/tXHs3t7/shirt.jpg" alt="Shirt"></a>
+                                        <h5>Shirt</h5>
+                                     </div>
+                                   </div>
+                                <div class="row2">
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/bWGbxZH/jeans.jpg" alt="Jeans"></a>
+                                        <h5>Jeans</h5>
+                                     </div>
+                                    <div class="d1">
+                                        <a href="#"><img src="https://i.ibb.co/r2vx9vw/trousers.jpg" alt="Trousers"></a>
+                                        <h5>Trousers</h5>
+                                    </div>
+                                 </div>  
+                                 <a href="#" class="explore">Explore More</a> 
+                            </div>    
+                            </div>
+    
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <footer class="foot">
+        <div class="backtotop">
+            <a href="#top"><h4>Back to top</h4></a>
+        </div>
+
+        <div class="footer2">
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Get to Know Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Connect With Us</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+            </ul>
+            </div>
+            <div class="footDiv noBorder">
+            <ul>
+                <li class="listone">Make Money With Us</li>
+                <li>Sell on Amazon</li>
+                <li>Sell Under Amazon Accelerator</li>
+                <li>Protect and Build Your Brand</li>
+                <li>Amazon Global Selling</li>
+                <li>Become an Affiliate</li>
+                <li>Fulfillment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon Pay on Merchants</li>
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Let Us Help You</li>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>	
+                <li>&nbsp</li>
+                <li>&nbsp</li>	                
+            </ul>
+            </div>
+        </div>
+
+
+        <div class="footer3 ">
+            <div >
+                <img src="https://i.ibb.co/Jmz0D0v/ama1.jpg">
+            </div>
+            <select class="footeroption ">
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+            <a href="#">Australia</a>
+            <a href="#">Brazil</a>
+            <a href="#">Canada</a>
+            <a href="#">China</a>
+            <a href="#">France</a>
+            <a href="#">Germany</a>
+            <a href="#">Italy</a>
+            <a href="#">Japan</a>
+            <a href="#">Mexico</a>
+            <a href="#">Netherlands</a>
+            <a href="#">Poland</a>
+            <a href="#">Singapore</a>
+            <a href="#">Spain</a>
+            <a href="#">Turkey</a>
+            <a href="#">UK</a>
+            <a href="#">USA</a>         		            	
+        </div>
+
+        <div class="footer4">
+            <div class="footDiv">
+            <ul>
+                <li class="listone">AbeBooks</li>
+                <li>Books, art</li>
+                <li>& collectibles</li>		                	               
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Amazon Web Services</li>
+                <li>Scalable Cloud</li>
+                <li>Computing Services</li>		                	                
+            </ul>
+            </div>
+            <div class="footDiv noBorder">
+            <ul>
+                <li class="listone">Audible</li>
+                <li>Download</li>
+                <li>Audio Books</li>		                
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">DPReview</li>
+                <li>Digital</li>
+                <li>Photography</li>		                                
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Shopbop</li>
+                <li>Designer</li>
+                <li>Fashion Brands</li>		                                
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Amazon Business</li>
+                <li>Everything For</li>
+                <li>Your Business</li>		                                
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Prime Now</li>
+                <li>2-Hour Delivery</li>
+                <li>on Everyday Items</li>		                                
+            </ul>
+            </div>
+            <div class="footDiv">
+            <ul>
+                <li class="listone">Amazon Prime Music</li>
+                <li>90 million songs, ad-free</li>
+                <li>Over 15 million podcast episodes</li>                             
+            </ul>
+            </div>
+        </div>	
+    </footer> 
+   </div>
+
+
+    <div id="coupon">
+        <button onClick ="closeCoupon()">&times;</button>
+    </div>
+    <script>
+        window.onload = loadCoupon()
+        window.onload = geolocation()
+    </script> 
+
+
+
+    </body>
 </html>
+
