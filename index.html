@@ -92,6 +92,15 @@
                 }
         } 
 
+
+         function my_navigation() {
+          var x = document.getElementById("navigate");
+          if (x.className === "mynav") {
+            x.className += " responsive";
+          } else {
+            x.className = "mynav";
+          }
+        }
     
         </script>
         <style>
@@ -201,16 +210,6 @@
                
             </div>
        </nav>
-       <script>
-        function myFunction() {
-          var x = document.getElementById("navigate");
-          if (x.className === "mynav") {
-            x.className += " responsive";
-          } else {
-            x.className = "mynav";
-          }
-        }
-        </script>
 
 
     <div class="slider">
